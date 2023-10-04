@@ -3,38 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Adarsh Vatsa - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
+        <h1>Adarsh Vatsa</h1>
+        <p>Email: <a href="mailto:vatsa.adarsh@gmail.com">vatsa.adarsh@gmail.com</a></p>
+        <p>Phone: +919019655814</p>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
             </ul>
         </nav>
     </header>
+
+    <section id="skills">
+        <h2>Skills and Technologies</h2>
+        <h3>ML/Scientific Computing frameworks:</h3>
+        <p>Keras, PyTorch, Tensorflow, SciPy, NumPy, pandas, Scikit-Learn</p>
     
-    <section id="home">
-        <h2>Welcome to My Portfolio</h2>
-        <p>This is the home section. Introduce yourself or give a brief overview of what visitors can expect from your portfolio.</p>
+        <h3>Tools and Languages:</h3>
+        <p>Python, C++, R, SQL, Shell Scripting, AWS/GCP, Git/GitHub, Kubernetes, Docker</p>
+    
+        <h3>Techniques:</h3>
+        <p>Data Analysis, Machine Learning, Deep Learning, Data Mining, Extract Transform and Load (ETL), Data Modeling, Statistical Analysis, Database Management, Natural Language Processing (NLP).</p>
+    </section>
+    
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <!-- ... Experience Section ... -->
     </section>
 
-    <section id="work">
-        <h2>My Work</h2>
-        <p>Details about your projects, achievements, and any other work-related content can go here. You can add images, links to projects, descriptions, etc.</p>
+    <section id="projects">
+        <h2>Projects</h2>
+    
+        <div class="project-item">
+            <h3>Platform for Movie Recommendations</h3>
+            <p><strong>Duration:</strong> November 2021 - May 2022</p>
+            <ul>
+                <li>Created a Hybrid Architecture with a Behavior Sequence Transformer beneath a Gated Recurrent Unit(GRU) layer (Tensorflow, Keras).</li>
+                <li>Combined short and long-term preferences by varying sequence lengths and based recommendations on both.</li>
+                <li>Website consists of React frontend and Node backend with a GraphQL API (hosted at asmr.onrender.com with over 100 user registrations so far).</li>
+                <li>Utilizes the Movielens 20M and 1M Datasets and produces a Root-mean-square error of just 0.836 when tested.</li>
+            </ul>
+        </div>
+    
+        <div class="project-item">
+            <h3>Finding soccer players with similar statistical profiles.</h3>
+            <p><strong>Duration:</strong> May 2020 - June 2020</p>
+            <ul>
+                <li>Covered 2000+ footballers by utilizing data from statsbomb(used by professional teams) via fbref (Python, pandas, mplsoccer, numpy, scikit-learn).</li>
+                <li>K-means clustering used to group multiple data points per 90 minutes from footballers together to find statistical similarities.</li>
+                <li>Within the same cluster, players ranked by Euclidean distance to find statistically closest players from the player in question.</li>
+            </ul>
+        </div>
+    
+        <div class="project-item">
+            <h3>LSTM trading bot</h3>
+            <p><strong>Duration:</strong> January 2020 - March 2020</p>
+            <ul>
+                <li>Implemented an LSTM model for algorithmic trading in Python.</li>
+                <li>Utilized the Zerodha Kite API to fetch ticker data and ran this bot on Indian stock exchanges with a capital of 2000 rupees.</li>
+                <li>Also implemented mean-reversion and momentum strategies for comparative analysis.</li>
+                <li>LSTM model produced a net return of 18% compared to 53% for mean-reversion and -3% for momentum strategies.</li>
+            </ul>
+        </div>
     </section>
+    
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Provide information about yourself. Talk about your education, experience, skills, and anything else you'd like to share.</p>
+    <section id="education">
+        <h2>Education</h2>
+    
+        <div class="education-item">
+            <h3>M.S. in Computer Science</h3>
+            <p><strong>Institution:</strong> Stevens Institute of Technology</p>
+            <p><strong>Location:</strong> Hoboken, NJ</p>
+            <p><strong>Duration:</strong> 2023-Ongoing</p>
+        </div>
+    
+        <div class="education-item">
+            <h3>B.Eng. in Computer Science</h3>
+            <p><strong>Institution:</strong> Visvesvaraya Technological University</p>
+            <p><strong>Location:</strong> Bangalore, Karnataka</p>
+            <p><strong>Completion:</strong> 2021</p>
+        </div>
     </section>
+    
 
     <footer>
-        <p>Contact information here</p>
+        <p>Connect with me on <a href="https://github.com/Saffronius">GitHub</a> and <a href="https://linkedin.com/in/your_linkedin">LinkedIn</a></p>
     </footer>
 </body>
 </html>
